@@ -15,30 +15,30 @@ Five preprocessing steps were performed on the dataset to organize it through fo
 
 ### Reducing Data Dimensions Using PCA
 The Principal Component Analysis (PCA) algorithm was applied to the scaled data and reduced the dimensions of the dataset to three principal components. The results of the PCA algorithm are displayed in the pca_df below.
-!(PCA DataFrame)(https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/PCA_df.png)
+![PCA DataFrame](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/PCA_df.png)
 <sub>PCA DataFrame</sub>
 
 ### Clustering Cryptocurrencies Using K-Means
 An elbow curve was created to determine the best value for K. The result of the elbow curve is below and demonstrates that the best value for K is four.
-!(Elbow Curve)(https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/Elbow_Curve.png)
+![Elbow Curve](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/Elbow_Curve.png)
 <sub>Elbow Curve</sub>
 
 The K-Means model was initialized with the desired number of clusters (four) and tested on the pca_df to identify and predict clusters. The results of the K-Means algorithm are shown in the "Class" column of the clustered_df below, along with the PCA results and the cryptocurrency features.
-!(Clustered DataFrame)(https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/Clustered_df.png)
+![Clustered DataFrame](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/Clustered_df.png)
 <sub>Clustered DataFrame</sub>
 
 ### Visualizing Cryptocurrencies Results
 The results of the clustered_df were visualized in a 3D scatter plot using Plotly Express and hvplot to show the distinct groups that correspond to the three principal components.
-!(Clustered DataFrame 3D Scatter Plot)(https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/clustered_df_3D_scatter_plot.png)
+![Clustered DataFrame 3D Scatter Plot](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/clustered_df_3D_scatter_plot.png)
 <sub>Clustered DataFrame 3D Scatter Plot</sub>
 
 The following table shows the currently tradable cryptocurrencies using the hvplot.table() function. The total number of tradable cryptocurrencies is 532.
-!(Tradeable Cryptocurrencies Table)(https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/tradable_cryptocurrencies_table.png)
+![Tradeable Cryptocurrencies Table](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/tradable_cryptocurrencies_table.png)
 <sub>Tradable Cryptocurrencies Talbe</sub>
 
 The "Total Coin Supply" and Total Coins Mined columns were scaled using MinMaxScaler.fit_transform() method to create the plot_df. This DataFrame was then used to create a scatter plot that visualizes the tradable cryptocurrencies.
-!(Plot DataFrame)(https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/plot_df.png)
+![Plot DataFrame](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/plot_df.png)
 <sub>Plot DataFrame</sub>
 
-!(Tradable Cryptocurrencies Scatter Plot)(https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/tradable_cryptocurrencies_scatter_plot.png)
+![Tradable Cryptocurrencies Scatter Plot](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/tradable_cryptocurrencies_scatter_plot.png)
 <sub>Tradable Cryptocurrencies Scatter Plot</sub>
