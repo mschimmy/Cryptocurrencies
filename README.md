@@ -16,6 +16,7 @@ Five preprocessing steps were performed on the dataset to organize it through fo
 ### Reducing Data Dimensions Using PCA
 The Principal Component Analysis (PCA) algorithm was applied to the scaled data and reduced the dimensions of the dataset to three principal components. The results of the PCA algorithm are displayed in the pca_df below.
 ![PCA DataFrame](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/PCA_df.png)
+
 <sub>PCA DataFrame</sub>
 
 ### Clustering Cryptocurrencies Using K-Means
