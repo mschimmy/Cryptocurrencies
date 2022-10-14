@@ -21,10 +21,11 @@ The Principal Component Analysis (PCA) algorithm was applied to the scaled data 
 
 ### Clustering Cryptocurrencies Using K-Means
 An elbow curve was created to determine the best value for K. The result of the elbow curve is below and demonstrates that the best value for K is four.
+
+The K-Means model was initialized with the desired number of clusters (four) and tested on the pca_df to identify and predict clusters. The results of the K-Means algorithm are shown in the "Class" column of the clustered_df below, along with the PCA results and the cryptocurrency features.
 ![Elbow Curve](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/Elbow_Curve.png)
 <sub>Elbow Curve</sub>
 
-The K-Means model was initialized with the desired number of clusters (four) and tested on the pca_df to identify and predict clusters. The results of the K-Means algorithm are shown in the "Class" column of the clustered_df below, along with the PCA results and the cryptocurrency features.
 ![Clustered DataFrame](https://github.com/mschimmy/Cryptocurrencies/blob/main/Resources/Clustered_df.png)
 <sub>Clustered DataFrame</sub>
 
